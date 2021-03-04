@@ -13,3 +13,49 @@ body {
 html {
   scroll-behavior: smooth;
 }
+footer {
+  text-align: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  color: black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+image {
+  margin-left: 20;
+}
+.logoContainer {
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+@media (max-width: 959.95px) {
+  .logoContainer {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+.alanLogo {
+  height: 27vmin;
+  border-radius: 15%;
+  padding: 0 5%;
+  margin: 3% 0;
+}
+@media (max-width: 959.95px) {
+  .alanLogo {
+    height: 35vmin;
+  }
+}
+.alan-57a22f58de6c18406cb6977e82dbd4302e956eca572e1d8b807a3e2338fdd0dc {
+  z-index: 999 !important;
+}
+.alan-component {
+  z-index: 5 !important;
+}

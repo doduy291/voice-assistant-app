@@ -15,13 +15,14 @@ const App = () => {
         if (command === 'newHeadlines') {
           setNewsArticles(articles);
         } else if (command === 'open') {
-          console.log(number);
           const parsedNumber = number.length > 2 ? wordsToNumbers(number, { fuzzy: true }) : number;
           const article = articles[parsedNumber - 1];
+
           if (parsedNumber > articles.length) {
             alanBtn().playText('Please try that again');
           } else if (article) {
-            window.open(article.url, '_blank');
+            window.open(article.url);
+
             alanBtn().playText('Opening...');
           } else {
             alanBtn().playText('Please try that again...');
